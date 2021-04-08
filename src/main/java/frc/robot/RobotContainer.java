@@ -7,11 +7,7 @@ package frc.robot;
 import edu.wpi.first.wpilibj.GenericHID;
 import edu.wpi.first.wpilibj.XboxController;
 import frc.robot.commands.ExampleCommand;
-import frc.robot.commands.Shoot;
-import frc.robot.commands.userDrive;
 import frc.robot.subsystems.ExampleSubsystem;
-import frc.robot.subsystems.Pneumatics;
-import frc.robot.subsystems.Drive;
 import edu.wpi.first.wpilibj2.command.Command;
 
 /**
@@ -23,12 +19,8 @@ import edu.wpi.first.wpilibj2.command.Command;
 public class RobotContainer {
   // The robot's subsystems and commands are defined here...
   private final ExampleSubsystem m_exampleSubsystem = new ExampleSubsystem();
-  private final Pneumatics m_pneumatics = new Pneumatics();
-  private final Drive m_drive = new Drive();
 
   private final ExampleCommand m_autoCommand = new ExampleCommand(m_exampleSubsystem);
-  private final Shoot m_shootPneumatics = new Shoot(m_pneumatics);
-  private final userDrive m_Driver = new userDrive(m_drive);
 
   /** The container for the robot. Contains subsystems, OI devices, and commands. */
   public RobotContainer() {

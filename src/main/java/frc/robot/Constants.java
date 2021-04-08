@@ -4,10 +4,6 @@
 
 package frc.robot;
 
-import edu.wpi.first.wpilibj.Solenoid;
-import com.ctre.phoenix.motorcontrol.can.TalonSRX;
-import edu.wpi.first.wpilibj.XboxController;
-
 /**
  * The Constants class provides a convenient place for teams to hold robot-wide numerical or boolean
  * constants. This class should not be used for any other purpose. All constants should be declared
@@ -16,24 +12,4 @@ import edu.wpi.first.wpilibj.XboxController;
  * <p>It is advised to statically import this class (or one of its inner classes) wherever the
  * constants are needed, to reduce verbosity.
  */
-public final class Constants 
-{
-    public static Solenoid barrel1 = new Solenoid(0);
-    public static Solenoid barrel2 = new Solenoid(1);
-    public static Solenoid barrel3 = new Solenoid(2);
-    public static Solenoid barrel4 = new Solenoid(4);
-
-    public static TalonSRX left1 = new TalonSRX(0);
-    public static TalonSRX left2 = new TalonSRX(0);
-    public static TalonSRX left3 = new TalonSRX(0);
-    public static TalonSRX right1 = new TalonSRX(0);
-    public static TalonSRX right2 = new TalonSRX(0);
-    public static TalonSRX right3 = new TalonSRX(0);
-
-    public static XboxController driveController = new XboxController(0);
-    public static XboxController auxController = new XboxController(1);
-
-
-    
-
-}
+public final class Constants {}
