@@ -123,6 +123,7 @@ xboxYButton.whenPressed(new shoot3Command(m_pneumatics) ,true);
 
     final JoystickButton xboxRightBumper = new JoystickButton(driveController, XboxController.Button.kBumperRight.value);        
 xboxRightBumper.whenPressed(new hornCommand(m_pneumatics) ,true);
+xboxRightBumper.whenReleased(new quietCommand(m_pneumatics), true);
     SmartDashboard.putData("XboxRightBumper",new hornCommand(m_pneumatics) );
 
 
