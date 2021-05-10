@@ -29,6 +29,6 @@ public class Constants {
     * }
     */ 
 
-    public static double shootTime = 250;
+    public static double shootTime = 100;
 }
 
