@@ -30,5 +30,6 @@ public class Constants {
     */ 
 
     public static double shootTime = 100;
+    public static double rampFactor = 1.0;
 }
 
