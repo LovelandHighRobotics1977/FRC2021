@@ -11,6 +11,8 @@
 
 package frc.robot;
 
+import edu.wpi.first.wpilibj.DigitalOutput;
+
 /**
  * The Constants class provides a convenient place for teams to hold robot-wide numerical or boolean
  * constants.  This class should not be used for any other purpose.  All constants should be
@@ -31,5 +33,7 @@ public class Constants {
 
     public static double shootTime = 100;
     public static double rampFactor = 1.0;
+    public static DigitalOutput shootLED = new DigitalOutput(0);
+    public static DigitalOutput loudLED = new DigitalOutput(1);
 }
 

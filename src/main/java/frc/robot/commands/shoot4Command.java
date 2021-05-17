@@ -61,6 +61,7 @@ public class shoot4Command extends CommandBase {
     public void execute() {
         m_pneumatics.shoot4Command();
         endTime = System.currentTimeMillis() - startTime;
+        Constants.shootLED.set(true);
     }
 
     // Called once the command ends or is interrupted.
@@ -68,6 +69,7 @@ public class shoot4Command extends CommandBase {
     public void end(boolean interrupted) {
 
         m_pneumatics.close4Command();
+        Constants.shootLED.set(false);
     }
 
     // Returns true when the command should end.
