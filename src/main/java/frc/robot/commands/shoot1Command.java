@@ -55,6 +55,7 @@ public class shoot1Command extends CommandBase {
     public void initialize() {
 
         startTime = System.currentTimeMillis();
+        Constants.shootLED.disablePWM();
     }
 
     // Called every time the scheduler runs while the command is scheduled.

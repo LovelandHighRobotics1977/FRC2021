@@ -53,6 +53,7 @@ public class hornCommand extends CommandBase {
     public void initialize() {
 
         //startTime = System.currentTimeMillis();
+        Constants.loudLED.disablePWM();
     }
 
     // Called every time the scheduler runs while the command is scheduled.

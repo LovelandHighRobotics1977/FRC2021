@@ -34,6 +34,7 @@ public class Constants {
     public static double shootTime = 100;
     public static double rampFactor = 1.0;
     public static DigitalOutput shootLED = new DigitalOutput(0);
+    
     public static DigitalOutput loudLED = new DigitalOutput(1);
 }
 
